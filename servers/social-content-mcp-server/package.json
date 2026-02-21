@@ -34,6 +34,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/TheNextGenNexus/social-content-mcp-servers"
-  }
+    "url": "https://github.com/TheNextGenNexus/social-media-mcp-servers"
+  },
+  "mcpName": "io.github.thenextgennexus/social-content-mcp-server"
 }
