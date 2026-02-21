@@ -1,6 +1,6 @@
 {
   "name": "@thenextgennexus/social-content-mcp-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Access Hacker News, Dev.to, IMDB, podcasts, and Eventbrite data through the Model Context Protocol",
   "type": "module",
   "bin": {
@@ -36,5 +36,5 @@
     "type": "git",
     "url": "https://github.com/TheNextGenNexus/social-media-mcp-servers"
   },
-  "mcpName": "io.github.thenextgennexus/social-content-mcp-server"
+  "mcpName": "io.github.TheNextGenNexus/social-content-mcp-server"
 }
