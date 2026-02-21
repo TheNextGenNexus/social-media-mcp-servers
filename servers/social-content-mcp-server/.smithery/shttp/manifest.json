@@ -1,0 +1,187 @@
+{
+  "payload": {
+    "type": "hosted",
+    "stateful": false,
+    "hasAuthAdapter": false,
+    "serverCard": {
+      "serverInfo": {
+        "name": "social-content-mcp-server",
+        "version": "1.0.0"
+      },
+      "tools": [
+        {
+          "name": "get_hackernews_stories",
+          "title": "Get Hackernews Stories",
+          "description": "Get top/new/best stories from Hacker News",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "category": {
+                "type": "string",
+                "default": "top",
+                "description": "Story category: top, new, best, ask, show"
+              },
+              "maxItems": {
+                "type": "number",
+                "default": 10,
+                "description": "Maximum stories to return"
+              }
+            },
+            "additionalProperties": false,
+            "$schema": "http://json-schema.org/draft-07/schema#"
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "destructiveHint": false,
+            "openWorldHint": true
+          },
+          "execution": {
+            "taskSupport": "forbidden"
+          }
+        },
+        {
+          "name": "get_devto_articles",
+          "title": "Get Devto Articles",
+          "description": "Search Dev.to articles",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "query": {
+                "type": "string",
+                "description": "Search query"
+              },
+              "maxItems": {
+                "type": "number",
+                "default": 10,
+                "description": "Maximum articles"
+              }
+            },
+            "required": [
+              "query"
+            ],
+            "additionalProperties": false,
+            "$schema": "http://json-schema.org/draft-07/schema#"
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "destructiveHint": false,
+            "openWorldHint": true
+          },
+          "execution": {
+            "taskSupport": "forbidden"
+          }
+        },
+        {
+          "name": "search_imdb",
+          "title": "Search Imdb",
+          "description": "Search IMDB movies and TV shows",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "query": {
+                "type": "string",
+                "description": "Movie or show title"
+              },
+              "maxItems": {
+                "type": "number",
+                "default": 5,
+                "description": "Maximum results"
+              }
+            },
+            "required": [
+              "query"
+            ],
+            "additionalProperties": false,
+            "$schema": "http://json-schema.org/draft-07/schema#"
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "destructiveHint": false,
+            "openWorldHint": true
+          },
+          "execution": {
+            "taskSupport": "forbidden"
+          }
+        },
+        {
+          "name": "search_podcasts",
+          "title": "Search Podcasts",
+          "description": "Search podcast episodes",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "query": {
+                "type": "string",
+                "description": "Podcast search query"
+              },
+              "maxItems": {
+                "type": "number",
+                "default": 10,
+                "description": "Maximum episodes"
+              }
+            },
+            "required": [
+              "query"
+            ],
+            "additionalProperties": false,
+            "$schema": "http://json-schema.org/draft-07/schema#"
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "destructiveHint": false,
+            "openWorldHint": true
+          },
+          "execution": {
+            "taskSupport": "forbidden"
+          }
+        },
+        {
+          "name": "search_eventbrite",
+          "title": "Search Eventbrite",
+          "description": "Search Eventbrite events",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "query": {
+                "type": "string",
+                "description": "Event search query"
+              },
+              "location": {
+                "type": "string",
+                "description": "City or region"
+              },
+              "maxItems": {
+                "type": "number",
+                "default": 10,
+                "description": "Maximum events"
+              }
+            },
+            "required": [
+              "query"
+            ],
+            "additionalProperties": false,
+            "$schema": "http://json-schema.org/draft-07/schema#"
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "destructiveHint": false,
+            "openWorldHint": true
+          },
+          "execution": {
+            "taskSupport": "forbidden"
+          }
+        }
+      ],
+      "resources": [],
+      "prompts": []
+    },
+    "source": {
+      "commit": "d4cdedc173a73e7a6669670fbd00570117a76ecb",
+      "branch": "main"
+    }
+  },
+  "artifacts": {
+    "module": "module.js",
+    "sourcemap": "module.js.map"
+  }
+}
