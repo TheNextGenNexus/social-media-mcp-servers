@@ -1,5 +1,5 @@
 {
-  "name": "@nexgendata/social-content-mcp-server",
+  "name": "@thenextgennexus/social-content-mcp-server",
   "version": "1.0.0",
   "description": "Access Hacker News, Dev.to, IMDB, podcasts, and Eventbrite data through the Model Context Protocol",
   "type": "module",
