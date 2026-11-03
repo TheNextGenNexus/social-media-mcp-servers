@@ -1,6 +1,6 @@
 # Social & Content MCP Server
 
-Access Hacker News, Dev.to, IMDB, podcasts, and Eventbrite data through the Model Context Protocol — powered by [nexgendata](https://apify.com/nexgendata) on Apify.
+Access Hacker News, Dev.to, IMDB, podcasts, and Eventbrite data through the Model Context Protocol — powered by [nexgendata](https://apify.com/nexgendata?fpr=2ayu9b) on Apify.
 
 ## Quick Start
 
@@ -64,7 +64,7 @@ This MCP server acts as a local stdio bridge to the [nexgendata Apify MCP endpoi
 
 ## Links
 
-- [Apify Store](https://apify.com/nexgendata/social-content-mcp-server)
+- [Apify Store](https://apify.com/nexgendata/social-content-mcp-server?fpr=2ayu9b)
 - [GitHub Repository](https://github.com/TheNextGenNexus/social-media-mcp-servers)
 - [nexgendata Blog](https://thenextgennexus.com)
 
